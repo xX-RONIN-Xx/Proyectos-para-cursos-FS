@@ -1,0 +1,46 @@
+.avatares{
+    margin-top: 15%;
+    margin-bottom: 15%;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    gap: 8px;
+}
+
+img{
+    width: 250px;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 16px;
+    margin: 50px;
+    cursor: pointer;
+    
+}
+@keyframes presentar {
+    from{
+        opacity: 0;
+        scale: 10%;
+        transform: rotate(1turn);
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+    
+}
+
+
+img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(255, 255, 0, 0.5), 0 -4px 8px rgba(255, 255, 0, 0.5);
+} 
+
+.animado{
+    animation: presentar 0.3s ease-out forwards;   
+}
+
+#avat img.clickeado{
+    transform: scale(2);
+    z-index: 1;
+}
